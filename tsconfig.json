@@ -15,7 +15,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@filipino-food-delicacies/recipe": ["libs/recipe/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

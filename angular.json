@@ -21,9 +21,7 @@
               "apps/filipino-food-delicacies/src/favicon.ico",
               "apps/filipino-food-delicacies/src/assets"
             ],
-            "styles": [
-              "apps/filipino-food-delicacies/src/styles.css"
-            ],
+            "styles": ["apps/filipino-food-delicacies/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -119,9 +117,7 @@
           "builder": "@nrwl/linter:lint",
           "options": {
             "linter": "tslint",
-            "tsConfig": [
-              "apps/filipino-food-delicacies-e2e/tsconfig.e2e.json"
-            ],
+            "tsConfig": ["apps/filipino-food-delicacies-e2e/tsconfig.e2e.json"],
             "exclude": [
               "**/node_modules/**",
               "!apps/filipino-food-delicacies-e2e/**"
@@ -129,6 +125,33 @@
           }
         }
       }
+    },
+    "recipe": {
+      "projectType": "library",
+      "root": "libs/recipe",
+      "sourceRoot": "libs/recipe/src",
+      "prefix": "rcp",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/recipe/tsconfig.lib.json",
+              "libs/recipe/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/recipe/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/recipe/jest.config.js",
+            "tsConfig": "libs/recipe/tsconfig.spec.json",
+            "setupFile": "libs/recipe/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {
