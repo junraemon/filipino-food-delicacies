@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "recipes": {
+      ".read": true,
+      ".write": "auth.uid == 'jaAqo7kprpdDxRYhpIPf39Y5Ux33'"
+    },
+    "categories": {
+      ".read": true,
+      ".write": "auth.uid == 'jaAqo7kprpdDxRYhpIPf39Y5Ux33'"
+    },
+    "images": {
+      ".read": true,
+      ".write": "auth.uid == 'jaAqo7kprpdDxRYhpIPf39Y5Ux33'"
+    }
+  }
+}
