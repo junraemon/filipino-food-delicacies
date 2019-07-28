@@ -1,27 +1,30 @@
-<div style="text-align:center">
-  <h1>Welcome to {{ title }}!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png"
-  />
-</div>
-
-<p>
-  This is an Angular app built with <a href="https://nx.dev/angular">Nx</a>.
-</p>
-<p>🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**</p>
-
-<h2>Quick Start & Documentation</h2>
-
-<ul>
-  <li>
-    <a href="https://nx.dev/angular/getting-started/what-is-nx"
-      >10-minute video showing all Nx features</a
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      Filipino Food Delicacies
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
     >
-  </li>
-  <li>
-    <a href="https://nx.dev/angular/tutorial/01-create-application"
-      >Interactive tutorial</a
-    >
-  </li>
-</ul>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/"
+            >Home <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Recipes</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
