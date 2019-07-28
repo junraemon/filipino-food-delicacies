@@ -1,0 +1,17 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "filipinoFoodDelicacies",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "filipino-food-delicacies",
+      "kebab-case"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "npmScope": "filipino-food-delicacies",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "filipino-food-delicacies-e2e": {
+      "tags": []
+    },
+    "filipino-food-delicacies": {
+      "tags": []
+    }
+  }
+}
