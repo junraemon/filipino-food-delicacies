@@ -1,1 +1,11 @@
-<p>home works!</p>
+<div class="card-columns">
+  <div class="card" *ngFor="let recipe of recipes$ | async">
+    <img src="https://placeimg.com/640/480/animals" class="card-img-top" />
+    <div class="card-body">
+      <h5 class="card-title">{{ recipe?.name }}</h5>
+      <p class="card-text">
+        {{ recipe?.details }}
+      </p>
+    </div>
+  </div>
+</div>
