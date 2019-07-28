@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyCVuZ7nkQSSxfmPSqWxx_oVS-VVHWeYOHY',
+    authDomain: 'filipinofooddelicacies-c2fc7.firebaseapp.com',
+    databaseURL: 'https://filipinofooddelicacies-c2fc7.firebaseio.com',
+    storageBucket: 'filipinofooddelicacies-c2fc7.appspot.com',
+    messagingSenderId: '877981756963'
+  }
 };
 
 /*
