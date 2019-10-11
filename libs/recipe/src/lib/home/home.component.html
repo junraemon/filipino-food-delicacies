@@ -1,11 +1,45 @@
-<div class="card-columns">
-  <div class="card" *ngFor="let recipe of recipes$ | async">
-    <img src="https://placeimg.com/640/480/animals" class="card-img-top" />
-    <div class="card-body">
-      <h5 class="card-title">{{ recipe?.name }}</h5>
-      <p class="card-text">
-        {{ recipe?.details }}
-      </p>
+<div class="text-right mb-3" *ngIf="isAdmin">
+  <a routerLink="/add" class="btn btn-success">Add Recipe</a>
+</div>
+
+<div *ngIf="recipes$ | async as recipes; else loading">
+  <div *ngIf="!recipes.length" class="alert alert-warning" role="alert">
+    No Recipes Found
+  </div>
+  <div class="card-columns">
+    <div class="card mb-3" *ngFor="let recipe of recipes">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="/assets/placeholder.jpg" class="card-img" />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{ recipe?.name }}</h5>
+            <p class="card-text">{{ recipe?.details | truncate: 30 }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-right" *ngIf="isAdmin">
+        <!-- <button type="button" class="card-link btn btn-info btn-sm">
+          View
+        </button>
+        <button type="button" class="card-link btn btn-success btn-sm">
+          Edit
+        </button> -->
+        <button
+          (click)="delete(recipe)"
+          type="button"
+          class="card-link btn btn-danger btn-sm"
+        >
+          Delete
+        </button>
+      </div>
     </div>
   </div>
 </div>
+
+<ng-template #loading>
+  <div class="alert alert-light" role="alert">
+    Fetching Recipes...
+  </div>
+</ng-template>

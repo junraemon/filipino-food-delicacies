@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
+import { SharedCoreModule } from '@filipino-food-delicacies/core';
 import { HomeComponent } from './home/home.component';
 import { AddComponent } from './add/add.component';
 
@@ -12,6 +13,7 @@ import { AddComponent } from './add/add.component';
     CommonModule,
     ReactiveFormsModule,
     AngularFirestoreModule,
+    SharedCoreModule,
     RouterModule.forChild([
       { path: '', pathMatch: 'full', component: HomeComponent },
       { path: 'add', pathMatch: 'full', component: AddComponent }
