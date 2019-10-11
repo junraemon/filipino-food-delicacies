@@ -19,6 +19,9 @@
     },
     "firebase": {
       "tags": []
+    },
+    "core": {
+      "tags": []
     }
   }
 }

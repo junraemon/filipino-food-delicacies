@@ -4,7 +4,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
-import { FirebaseModule } from '@filipino-food-delicacies/firebase';
+import { CoreModule } from '@filipino-food-delicacies/core';
 
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
@@ -18,7 +18,7 @@ import { routing } from './app.routing';
     AngularFireModule.initializeApp(environment.firebase, 'ffd'),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    FirebaseModule
+    CoreModule
   ],
   bootstrap: [AppComponent]
 })
