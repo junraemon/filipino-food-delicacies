@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@filipino-food-delicacies/recipe": ["libs/recipe/src/index.ts"]
+      "@filipino-food-delicacies/recipe": ["libs/recipe/src/index.ts"],
+      "@filipino-food-delicacies/firebase": ["libs/firebase/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -16,6 +16,9 @@
     },
     "recipe": {
       "tags": []
+    },
+    "firebase": {
+      "tags": []
     }
   }
 }
